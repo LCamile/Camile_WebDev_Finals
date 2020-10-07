@@ -1,6 +1,7 @@
 *{
   font-family: Lucidatypewriter;
   font:  20px Arial;
+  color: white;
 }
 body {
   background-image: url("https://lcamile.github.io/Camile_WebDev_Finals/register/genshinbackground1.jpg");
@@ -26,6 +27,7 @@ input[type="text"],
 input[type="date"],
 input[type="password"],
 input[type="email"]{
+  
     width: 130%;
 }
 input:focus{
@@ -41,8 +43,10 @@ select{
 }
 h1 {
   text-align: center;
-color: black;
+color: white;
+   font-size: 300%;
   margin-top: 65px;
+ 
 }
 
 table {
@@ -51,7 +55,7 @@ table {
 }
 
 button {
-  background-color: #4CAF50; 
+  background-color:#151E3D; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -69,3 +73,28 @@ input:valid {
 input:focus:invalid {
     border-bottom: 1px solid red;
     background:transparent;
+}
+option{
+   
+font-size: 20px;
+ 
+}
+option{
+  color: white;
+  font-size: 20px;
+ background: rgba(0, 0, 0, 0.5);
+
+}
+select{
+   color: white;
+font-size: 20px;
+  background: rgba(0, 0, 0, 0.1);
+   padding: 8px;
+}
+button:hover{
+    border-bottom: 1px solid gray;
+    background: #003366;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
