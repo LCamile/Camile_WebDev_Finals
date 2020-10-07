@@ -1,5 +1,6 @@
 *{
   font-family: Lucidatypewriter;
+  font:  20px Arial;
 }
 body {
   background-image: url("https://lcamile.github.io/Camile_WebDev_Finals/register/genshinbackground1.jpg");
@@ -18,12 +19,25 @@ input {
   background: transparent;
   border: none;
   border-bottom: 1px solid;
-  font: 400 13.3333px Arial;
- font-weight: bold;
+
+ 
+}
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="email"]{
+    width: 130%;
+}
+input:focus{
+    background: transparent;
+    outline: none;
 }
 #drpLoginType{
-  font: 400 13.3333px Arial;
+  font: 400 20px Arial;
    
+}
+select{
+  margin-bottom: 20px;
 }
 h1 {
   text-align: center;
@@ -48,3 +62,10 @@ button {
   margin-left: 15px;
   margin-top: 25px;
 }
+input:valid {
+    border-bottom: 1px solid greenyellow;
+    background:transparent;
+}
+input:focus:invalid {
+    border-bottom: 1px solid red;
+    background:transparent;
