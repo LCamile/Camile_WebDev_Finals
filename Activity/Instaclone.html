@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Instagram Photos Feed With Bootstrap</title>
+        <link rel="stylesheet" href="Instaclone.css" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-light sticky-top bg-light" style="border-bottom: 1px solid #ddd;">
+            <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" width="150px"></a>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <ul class="nav ">
+              <li class="nav-item">
+                <i class="fas fa-home fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-compass fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-heart fa-2x"></i>&nbsp;&nbsp;&nbsp;
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="Assest/prof.jpg" class="icon3"></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+              </li>
+        
+            </ul>
+          </nav>
+        <!-- Modal Begin -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body ">
+                  <textarea class="form-control" aria-label="With textarea"></textarea>
+                  <!--<input class="form-control mr-sm-2 custom-search-modal" type="search" placeholder="" aria-label="Search">-->
+                  <i class="fas fa-camera-retro p-1 border rounded mt-1" ></i>
+                  <i class="fas fa-map-marker-alt p-1 border rounded mt-1" ></i>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success btn-sm">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- modal end -->
+        
+        
+            
+        <div class="container-fluid ">
+          <!-- Nav pills -->
+            <ul class="nav nav-pills justify-content-center mt-4 " role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#home"><i class="fa fa-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#menu2"><i class="fa fa-th" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="home" class="container-fluid tab-pane active "><br>
+                    <div class="row justify-content-center">
+                        <div class="">
+                            
+                            <div class="card mx-auto custom-card w-50" id="prova">
+                                
+                                <div class="row post-header col-12 py-2 px-3">
+                                
+                                        <h4><img src="Assest/prof.jpg" class="icon">Lawlawlawrence</h4>
+                                        <div class="col-6 float-right text-right post-number"><h3><a href="#" class="moremore">...</a></h2></div>
+                                    
+                                </div>
+                                <img class="card-img" src="Assest/pic14.png" alt="Card image cap">
+                                <div class="card-body px-3">
+                                    <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                                    <h5 class="card-title">Liked by <strong>Rado,Doreen</strong>and 40 others</h5>
+                                    <p class="card-text"><strong>Lawlawlawrence</strong> "Tama na sirr"</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                                      </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="card mx-auto custom-card w-50" id="prova">
+                                
+                                <div class="row post-header col-12 py-2 px-3">
+                                
+                                    <h4><img src="Assest/prof.jpg" class="icon">Lawlawlawrence</h4>
+                                    <div class="col-6 float-right text-right post-number"><h3><a href="#" class="moremore">...</a></h2></div>
+                                
+                            </div>
+                                <img class="card-img" src="Assest/pic11.jpg" alt="Card image cap">
+                                <div class="card-body px-3">
+                                    <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                                    <h5 class="card-title">Liked by <strong>Rado,Doreen</strong>and 40 others</h5>
+                                    <p class="card-text"><strong>Lawlawlawrence</strong> "Taking a pic with my pets"</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                                      </ul>
+                                </div>
+                                
+                            </div>
+
+                            <div class="card mx-auto custom-card w-50" id="prova">
+                                
+                                <div class="row post-header col-12 py-2 px-3">
+                                
+                                    <h4><img src="Assest/prof.jpg" class="icon">Lawlawlawrence</h4>
+                                    <div class="col-6 float-right text-right post-number"><h3><a href="#" class="moremore">...</a></h2></div>
+                                
+                            </div>
+                                <img class="card-img" src="Assest/pic10.jpg" alt="Card image cap">
+                                <div class="card-body px-3">
+                                    <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                                    <h5 class="card-title">Liked by <strong>Rado,Doreen</strong>and 40 others</h5>
+                                    <p class="card-text"><strong>Lawlawlawrence</strong> "Eating with my pets"</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                                      </ul>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="card mx-auto custom-card w-50" id="prova">
+                                
+                                <div class="row post-header col-12 py-2 px-3">
+                                
+                                    <h4><img src="Assest/prof.jpg" class="icon">Lawlawlawrence</h4>
+                                    <div class="col-6 float-right text-right post-number"><h3><a href="#" class="moremore">...</a></h2></div>
+                                
+                            </div>
+                                <img class="card-img" src="Assest/pic2.jpg" alt="Card image cap">
+                                <div class="card-body px-3">
+                                    <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                                    <h5 class="card-title">Liked by <strong>Rado,Doreen</strong>and 40 others</h5>
+                                    <p class="card-text"><strong>Lawlawlawrence</strong> "Taking a break"</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                                      </ul>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="card mx-auto custom-card w-50" id="prova">
+                                
+                                <div class="row post-header col-12 py-2 px-3">
+                                
+                                    <h4><img src="Assest/prof.jpg" class="icon">Lawlawlawrence</h4>
+                                    <div class="col-6 float-right text-right post-number"><h3><a href="#" class="moremore">...</a></h2></div>
+                                
+                            </div>
+                                <img class="card-img" src="Assest/pic3.jpg" alt="Card image cap">
+                                <div class="card-body px-3">
+                                    <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                                    <h5 class="card-title">Liked by <strong>Rado,Doreen</strong>and 40 others</h5>
+                                    <p class="card-text"><strong>Lawlawlawrence</strong> "Feeling cool"</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                                      </ul>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="card mx-auto custom-card w-50" id="prova">
+                                
+                                <div class="row post-header col-12 py-2 px-3">
+                                
+                                    <h4><img src="Assest/prof.jpg" class="icon">Lawlawlawrence</h4>
+                                    <div class="col-6 float-right text-right post-number"><h3><a href="#" class="moremore">...</a></h2></div>
+                                
+                            </div>
+                                <img class="card-img" src="Assest/pic4.png" alt="Card image cap">
+                                <div class="card-body px-3">
+                                    <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                                    <h5 class="card-title">Liked by <strong>Rado,Doreen</strong>and 40 others</h5>
+                                    <p class="card-text"><strong>Lawlawlawrence</strong> "Oppa"</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                                      </ul>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="card mx-auto custom-card w-50" id="prova">
+                                
+                                <div class="row post-header col-12 py-2 px-3">
+                                
+                                    <h4><img src="Assest/prof.jpg" class="icon">Lawlawlawrence</h4>
+                                    <div class="col-6 float-right text-right post-number"><h3><a href="#" class="moremore">...</a></h2></div>
+                                
+                            </div>
+                                <img class="card-img" src="Assest/pic5.jpg" alt="Card image cap">
+                                <div class="card-body px-3">
+                                    <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                                    <h5 class="card-title">Liked by <strong>Rado,Doreen</strong>and 40 others</h5>
+                                    <p class="card-text"><strong>Lawlawlawrence</strong> "Thank you David Salon for my hair and makeup"</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                                      </ul>
+                                </div>
+                                
+                            </div>
+                            
+                          
+                            <div class="card mx-auto custom-card w-50" id="prova">
+                                
+                                <div class="row post-header col-12 py-2 px-3">
+                                
+                                    <h4><img src="Assest/prof.jpg" class="icon">Lawlawlawrence</h4>
+                                    <div class="col-6 float-right text-right post-number"><h3><a href="#" class="moremore">...</a></h2></div>
+                                
+                            </div>
+                                <img class="card-img" src="Assest/pic16.jpg" alt="Card image cap">
+                                <div class="card-body px-3">
+                                    <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                                    <h5 class="card-title">Liked by <strong>Rado,Doreen</strong>and 40 others</h5>
+                                    <p class="card-text"><strong>Lawlawlawrence</strong> "Going to the beach with my pets"</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                                      </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="card mx-auto custom-card w-50" id="prova">
+                                
+                                <div class="row post-header col-12 py-2 px-3">
+                                
+                                    <h4><img src="Assest/prof.jpg" class="icon">Lawlawlawrence</h4>
+                                    <div class="col-6 float-right text-right post-number"><h3><a href="#" class="moremore">...</a></h2></div>
+                                
+                            </div>
+                                <img class="card-img" src="Assest/pic15.jpg" alt="Card image cap">
+                                <div class="card-body px-3">
+                                    <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                                    <h5 class="card-title">Liked by <strong>Rado,Doreen</strong>and 40 others</h5>
+                                    <p class="card-text"><strong>Lawlawlawrence</strong> "Sexy AF"</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                                      </ul>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="card mx-auto custom-card w-50" id="prova">
+                                
+                                <div class="row post-header col-12 py-2 px-3">
+                                
+                                    <h4><img src="Assest/prof.jpg" class="icon">Lawlawlawrence</h4>
+                                    <div class="col-6 float-right text-right post-number"><h3><a href="#" class="moremore">...</a></h2></div>
+                                
+                            </div>
+                                <img class="card-img" src="Assest/pic7.jpg" alt="Card image cap">
+                                <div class="card-body px-3">
+                                    <h5 class="card-title"><i class="far fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-comment fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-paper-plane fa-lg"></i></h5>
+                                    <h5 class="card-title">Liked by <strong>Rado,Doreen</strong>and 40 others</h5>
+                                    <p class="card-text"><strong>Lawlawlawrence</strong> "Letting my pet cook for me"</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input id="commentbox" type="text" placeholder="Add a comment.."><a href="#" id="commentbox_btn">Post</a></li>
+                                      </ul>
+                                </div>
+                                
+                            </div>
+                    
+                        </div>
+                    </div>    
+                </div>
+                
+                <div id="menu2" class="container-fluid tab-pane fade"><br>
+                    <div class="row ">
+                        <div class="col-md-4 col-sm-6 px-1 my-1 ">
+                            <img src="Assest/pic1.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1 ">
+                            <img src="Assest/pic2.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1 ">
+                            <img src="Assest/pic3.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1 ">
+                            <img src="Assest/pic4.png" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1">
+                            <img src="Assest/pic5.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1">
+                            <img src="Assest/pic6.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1">
+                            <img src="Assest/pic7.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1">
+                            <img src="Assest/pic8.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1">
+                            <img src="Assest/pic9.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
